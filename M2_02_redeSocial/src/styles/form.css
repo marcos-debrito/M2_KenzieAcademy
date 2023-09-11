@@ -1,0 +1,105 @@
+form {
+    width: 80%;
+    margin: 20% auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+form > .post__img > img {
+    width: 52px;
+}
+
+form > .post__img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+form > .post__img > .post__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form > .post__img > .post__info > .forms__name {
+    font-size: var(--fontTitle-2);
+    color: var(--grey-1);
+    font-weight: var(--fontWeight-3)
+}
+
+form > .post__img > .post__info > .forms__stack {
+    font-size: var(--fontText-3);
+    color: var(--grey-2);
+    font-weight: var(--fontWeight-3)
+}
+
+form > .post__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+   
+}
+
+form > .post__text > .input__title{
+    height: 40px;
+    border: 2px solid var(--grey-4);
+    outline: 1px solid var(--grey-4);
+    border-radius: 4px;
+    resize: none;
+    padding: 2%;
+    font-size: var(--fontText-2);
+    color: var(--grey-1);
+    overflow-y: hidden;
+   
+}
+
+form > .post__text > .input__title:focus{
+    border: 2px solid var(--brand-1);
+    transition: 0.6s;
+}
+
+form > .post__text > .input__title::placeholder{
+    font-size: var(--fontText-2);
+    color: var(--grey-3);
+}
+
+form > .post__text > .my-post{
+    font-size: var(--fontText-1);
+    color: var(--grey-2);
+    border: 2px solid var(--grey-4);
+    border-radius: 4px;  
+    padding: 2%;
+    width: auto;
+    max-height: 200px;
+    outline: 1px solid var(--grey-4);
+    resize: none;
+}
+
+form > .post__text > .my-post:focus{
+    border: 2px solid var(--brand-1);
+    transition: 0.6s;
+}
+
+form > .post__text > .my-post::placeholder{
+    font-size: var(--fontText-2);
+    color: var(--grey-3);
+}
+
+form > .post__text > button {
+    align-self: end;
+    background-color: var(--grey-4);
+    color: var(--grey-3);
+    width: 70px;
+    padding: 12px;
+    border-radius: 2px;
+}
+
+form > .post__text > button:hover{
+    background-color: var(--brand-1);
+    color: var(--whiteFixed);
+    cursor: pointer;
+    transition: 0.6s;
+}

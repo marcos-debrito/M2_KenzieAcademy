@@ -1,0 +1,109 @@
+.container__posts > h2 {
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.container__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    height: auto;
+    padding: 1% 5%;  
+}
+
+.post__name{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 10px;
+   font-weight: var(--fontWeight-2);
+}
+
+.post__name > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post__name > div > .name__style{
+    font-size: var(--fontTitle-2);
+    color: var(--grey-0);
+    font-weight: var(--fontWeight-3)
+} 
+
+.post__name > div > .stack {
+    font-size: var(--fontText-3);
+    color: var(--grey-2);
+    font-weight:  var(--fontWeight-3);
+}
+
+.post__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post__height {
+    max-height: 2.8rem;
+    overflow-y: hidden;
+}
+
+.post__text > .text__title{
+    font-size: var(--fontTitle-2);
+    font-weight: var(--fontWeight-1)
+}
+
+.post__text > .text__user{
+    font-size: var(--fontText-1);
+    color: var(--grey-2);
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: var(--fontWeight-3)
+}
+
+.posts__style{
+    min-width: 80%;
+    max-width: 80%;
+    align-self: center;
+    overflow-x: hidden;
+    
+}
+
+.container__posts > .posts__style > .post__buttons {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__posts > .posts__style > .post__buttons > button {
+    font-size: var(--fontText-3);
+    background-color: var(--grey-1);
+    color: var(--whiteFixed);
+    width: 70px;
+    border-radius: 2px;
+    height: 40px;
+}
+
+.container__posts > .posts__style > .post__buttons > button:hover{
+    background-color: var(--grey-0);
+    color: var(--whiteFixed);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.container__posts > .posts__style > .post__buttons > figure > img {
+    width: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__posts > .posts__style > .post__buttons > figure > img:hover{
+    cursor: pointer;
+}
+
+.container__posts > .posts__style > .post__buttons > figure > span {
+    font-size: var(--fontText-3);
+}
+
+

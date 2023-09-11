@@ -1,0 +1,78 @@
+body > main > .container__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+body > main > .container__posts > span {
+    color: var(--color-subtitle);
+    font-weight: var(--font-weight-1);
+}
+
+.container__cards{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+}
+
+.container__cards > li {
+    width: 308px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background:var(--card-background);
+}
+
+.container__cards > li > img {
+    max-width: 308px;
+    max-height: 123px;
+    image-rendering: optimizeQuality;
+}
+
+.container__cards > li > .card-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px 10px 10px;
+}
+
+.container__cards > li > .card-itens > .card__header{
+    display: flex;
+    gap: 20px;
+    color: var(--card-header);
+}
+
+.container__posts > .container__cards > li > .card-itens > h4 {
+    color: var(--card-main);
+}
+
+.container__cards > li >.card-itens > .card__price{
+    display: flex;
+    justify-content: space-between;
+    color: var(--card-main);
+    font-weight: var(--font-weight-1);
+}
+
+.container__cards > li > .card-itens > .card__price > button {
+    background-color: var(--button-backgrund);
+    color: var(--button-color);
+    border-radius: var(--radius-1);
+    border: none;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.container__cards > li:hover {
+    background: var(--card-background-hover);
+    cursor: pointer;
+} 
+
+.container__cards > li:hover > .card-itens > .card__price > button {
+    background: var(--button-background-hover);
+}

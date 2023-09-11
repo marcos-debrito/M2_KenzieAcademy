@@ -1,0 +1,4 @@
+handleModal()
+
+renderCards(insertedValues) 
+

@@ -1,0 +1,41 @@
+@media (min-width: 800px){
+    .container__post {
+        max-width: 40%;
+        margin: 10%;
+    }
+   
+    aside {
+        position: fixed;
+        top: 100px;
+        right: 0px;
+        min-width: 300px;
+        margin: 7% 5%;
+    }
+
+    aside > .container__sugestions{
+        flex-direction: column;
+    }
+
+    dialog{
+        max-width: 40%;
+    };
+
+    .post__style{
+        align-self: start;
+    }
+    .container__posts {
+        max-width: 65%;
+    }
+}
+
+@media (min-width: 1024px){
+
+    aside {
+        margin-top: 7%
+    }
+    .container__post {
+        min-width: 50%;
+        margin:10%;
+        margin-bottom: 0;
+    }
+}

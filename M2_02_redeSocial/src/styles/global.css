@@ -1,0 +1,62 @@
+:root {
+    --brand-1:#4263EB;
+    --brand-2:#364FC7;
+
+    --grey-0:#0A0C0D;
+    --grey-1:#212529;
+    --grey-2:#495057;
+    --grey-3:#868E96;
+    --grey-4:#DEE2E6;
+    --grey-5:#F8F9FA;
+    --grey-opacity-1:rgba(33, 37, 41, 0.5);
+    --whiteFixed: #FFF;
+
+    --like-color: #D7443E;
+
+    --fontTitle-1: 1.75rem;
+    --fontTitle-2: 1.25rem;
+
+    --fontText-1: 1rem;
+    --fontText-2: 0.875rem;
+    --fontText-3: 0.75rem;
+
+    --fontWeight-1: 700;
+    --fontWeight-2: 600;
+    --fontWeight-3: 400;
+}
+
+img {
+    width: 52px;
+}
+
+dialog {
+    border: none;
+    width: 70%;
+    border-radius: 8px;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(4px);
+}
+
+dialog > button {
+    position: absolute;
+    top: 6%;
+    right: 4%;
+    width: 40px;
+    height: 40px;
+    border-radius: 150px;
+    color: var(--grey-3);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+dialog > button:hover {
+    background-color: var(--grey-4);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.post__buttons > figure {
+    display: flex;
+    gap: 5px;
+}

@@ -1,0 +1,33 @@
+/* Desenvolva sua estilização aqui ... */
+main > .header__title {
+display: flex;
+justify-content: space-between;
+
+}
+
+main > .header__title > h2 {
+font-weight: var(--font-weight-1);;
+font-size: var(--font-1);
+color: var(--color-title)
+}
+
+
+main > .header__title > div {
+    background-color: var(--background-filters);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 5px;
+}
+
+main > .header__title > .dark {
+    background-image: url('../assets/img/moon.svg');
+
+}
+
+main > .header__title > .light {
+    background-image: url('../assets/img/sun.svg');
+
+}

@@ -1,0 +1,29 @@
+/* ------------------------------- Coloque sua estilização aqui ------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --brand-1: #4C6EF5;
+    --brand-2: #364FC7;
+
+    --grey-0: #191C1F;
+    --grey-1: #212529;
+    --grey-2: #343A40;
+    --grey-3: #ADB5BD;
+    --grey-4: #CED4DA;
+    --grey-5: #F8F9FA;
+
+    --font-title-1: 52px;
+    --font-title-2: 40px;
+    --font-title-3: 32px;
+
+    --font-text-1: 28px;
+    --font-text-2: 20px;
+    --font-text-3: 18px;
+}

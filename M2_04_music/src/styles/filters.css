@@ -1,0 +1,36 @@
+.container__filters{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px; 
+}
+
+.container__filters > h3 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-3);
+    color: var(--color-subtitle);
+}
+
+.container__filters > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container__filters > div > button {
+    height: 32px;
+    border: none;
+    border-radius: var(--radius-1);
+    font-weight: var(--font-weight-2);
+    background-color: var(--background-filters);
+    color: var(--color-filters);
+    cursor: pointer;
+    padding: 0 8px;
+    border: 1px solid  var(--background-filters);
+   
+}
+
+.container__filters > div > button:focus{
+    background-color: var(--background-filters-hover);
+    color: var(--color-filters-hover);
+    border: 1px solid var(--border-filter-hover);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/filters.css">
+    <link rel="stylesheet" href="./src/styles/rangePrice.css">
+    <link rel="stylesheet" href="./src/styles/containerPosts.css">
+    <title>Open Music</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="header__title">
+        <h2>Open music</h2>
+        <div class="theme__controller dark"></div>
+      </div>
+      
+      <div class="container__filters">
+        <h3>Gênero Musical</h3>
+
+        <div class="container__buttons">
+        </div>
+
+        <div class="container__price">
+          <div>
+            <span>Definir preço</span>
+            <p>Até R$ <span id="span__price">100</span></p>
+          </div>
+
+          <input type="range" id="rangeInput" min="0" max="100" step="1" value="100">
+          
+        </div>
+
+       
+
+      </div>
+
+      <div class="container__posts">
+        <span>Albuns encontrados</span>
+        <ul class="container__cards"></ul>
+      </div>
+    </main>
+
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>

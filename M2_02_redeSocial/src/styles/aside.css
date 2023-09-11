@@ -1,0 +1,93 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+    min-width: 90%;
+}
+
+aside > span {
+    font-size: var(--fontTitle-2);
+    font-weight: 600;
+}
+
+aside > .container__sugestions {
+    display: flex;
+    overflow-x: auto;
+
+    gap: 30px;
+
+    width: 100%;
+    min-width: 40%;
+    max-width: 400px;
+
+}
+
+aside > .container__sugestions > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+
+}
+
+aside > .container__sugestions > div > figure {
+    display: flex;
+    gap: 12px;
+}
+
+aside > .container__sugestions > div > figure > div {
+    display: flex;
+    flex-direction: column;
+}
+
+ aside > .container__sugestions > div > figure > div > .nameSuggestion{
+    font-size: var(--fontTitle-2);
+    font-weight: 400;
+    font-weight: var(--fontWeight-2);
+} 
+
+aside > .container__sugestions > div > figure > div> .stack{
+    font-size: var(--fontText-3);
+    font-weight: var(--fontWeight-3);
+    color: var(--grey-2);
+} 
+
+aside > .container__sugestions > div > button {
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: var(--fontText-3);
+    background-color: var(--whiteFixed);
+    color: var(--grey-0);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    
+    width: 70px;
+    align-self: center;
+    cursor: pointer;
+}
+
+aside > .container__sugestions > div > button:hover{
+    color: var(--brand-2);
+    border-color: var(--brand-2);
+    border: 1px solid var(--brand-2);
+    
+}
+
+aside > .container__sugestions > div > .follow{
+    background-color: var(--brand-1);
+    transition: 0.6s;
+    color: var(--whiteFixed);
+    border: var(--brand-2);
+    border: 1px solid var(--brand-2);
+}
+
+aside > .container__sugestions > div > .follow:hover{
+    color: var(--whiteFixed);
+}
+
+

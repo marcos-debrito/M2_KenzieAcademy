@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/cards.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    
+  </head>
+
+  <body>
+    <dialog class="modal__controller">
+      <div class="modal__container">
+        <div class="modal__header">
+          <span class="modal__register">Registro de valor</span>
+          <button class="modal__button-close">X</button>
+        </div>
+        <span class="modal__text">Digite o valor e em seguida aperte no botão referente ao tipo do valor</span>
+        <div class="container__input">
+          <label class="label__text">Valor</label>
+          <input type="number" placeholder=" R$ 00,00" >
+        </div>
+
+        <div class="container__changes">
+          <label class="label__type">Tipo de valor</label>
+          <div>
+            <button class="type" id="0">Entrada</button>
+            <button class="type" id="1">Saída</button>
+          </div>
+        </div>
+
+        <div class="container__action">
+          <button class="action__cancel">cancelar</button>
+          <button class="action__insert">Inserir valor</button>
+        </div>
+        
+      </div>
+    </dialog>
+
+    <header>
+      <div>
+        <div>
+          <span>Control</span> Finance
+        </div>
+
+        <button class="show-modal">Registrar novo valor</button>
+      </div>
+    </header>
+
+    <main id="app">
+      <div class="container">
+        <div class="container__title">
+          <span>Resumo financeiro</span>
+          <div>
+            <button class="all">Todos</button>
+            <button class="inflow">Entradas</button>
+            <button class="outflow">Saídas</button>
+          </div>
+        </div>
+
+        <div class="sum-values">
+          <span>Soma dos valores</span>
+
+          <div>
+             <span class="total">R$ 00,00</span>
+          </div>
+        </div>
+
+        <ul>
+
+        </ul>
+      </div>
+    </main>
+    
+    <script src="./src/scripts/modal.js"></script>
+    <script src="./src/scripts/valuesData.js"></script>
+    <script src="./src/scripts/render.js"></script>
+    <script src="./src/scripts/filters.js"></script>
+    <script src="./src/scripts/index.js"> </script>
+  </body>
+</html>

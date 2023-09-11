@@ -1,0 +1,33 @@
+/* Mobile First */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-1);
+    padding: 2% 10%;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+header > img {
+    width: 120px;
+}
+
+header > button {
+    background-color: var(--grey-1);
+    color: var(--whiteFixed);
+    font-size: var(--fontText-2);
+    font-weight: var(--fontWeight-3);
+    padding: 6px 8px;
+    border-radius: 6px;
+
+
+}
+
+header > button:hover {
+    cursor: pointer;
+    background-color: var(--grey-0);
+    transition: 0.6s;
+}
